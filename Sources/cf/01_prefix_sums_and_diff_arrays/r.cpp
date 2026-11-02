@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-long long count_blacks(long long row, long long col, vector<vector<long long>>& prefix) {
+long long count_blacks(int row, int col, vector<vector<int>>& prefix) {
     if (row < 0 || col < 0) {
         return 0;
     }
@@ -28,7 +28,7 @@ long long count_blacks(long long row, long long col, vector<vector<long long>>& 
 signed main() {
     int n, q;
     cin >> n >> q;
-    vector<vector<long long>> prefix(n, vector<long long>(n));
+    vector<vector<int>> prefix(n, vector<int>(n));
     std::string str;
     for (int i=0;i<n;i++) {
         cin >> str;
